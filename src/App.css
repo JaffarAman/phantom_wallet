@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .App {
   text-align: center;
 }
@@ -35,4 +40,56 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.container {
+  background: rgb(40, 62, 81);
+  background: linear-gradient(
+    245deg,
+    rgba(40, 62, 81, 1) 54%,
+    rgba(106, 99, 210, 1) 100%
+  );
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wallet_wrapper,
+.connectedwallet_wrapper {
+  border: 1px solid white;
+  width: 500px;
+  height: 200px;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.wallet_wrapper h1,
+.connectedwallet_wrapper h1 {
+  color: white;
+  margin: 10px 0;
+}
+.wallet_wrapper button,
+.connectedwallet_wrapper button {
+  background-color: black;
+}
+
+.connectedwallet_wrapper {
+  height: 250px;
+}
+
+.solbtn {
+  background-color: rgba(106, 99, 210, 1) !important;
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  width: 150px;
+  height: 40px;
+  color: white;
+}
+.sol_balance {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
