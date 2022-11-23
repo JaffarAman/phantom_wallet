@@ -3,7 +3,6 @@ import {
   WalletProvider,
   useAnchorWallet,
 } from "@solana/wallet-adapter-react";
-import { TOKEN_PROGRAM_ID } from "@solana/spl-token";
 import { WalletAdapterNetwork } from "@solana/wallet-adapter-base";
 import {
   WalletModalProvider,
